@@ -1,4 +1,4 @@
-//´Ó node ¿ªÊ¼Í¨¹ı classname, »ñÈ¡ÔªËØ½Úµã£¬Ê¹ĞÂÀÏä¯ÀÀÆ÷¶¼ÄÜÖ§³Ö  
+//ä» node å¼€å§‹é€šè¿‡ classname, è·å–å…ƒç´ èŠ‚ç‚¹ï¼Œä½¿æ–°è€æµè§ˆå™¨éƒ½èƒ½æ”¯æŒ  
 function getElementsByClassName(node,classname)  
 {  
     if(node.getElementsByClassName){  
@@ -19,7 +19,7 @@ function getElementsByClassName(node,classname)
     }  
 }  
   
-// ½« func ÉèÖÃÎªÒ³Ãæ¼ÓÔØÍê±ÏÊ±Ö´ĞĞµÄº¯Êı  
+// å°† func è®¾ç½®ä¸ºé¡µé¢åŠ è½½å®Œæ¯•æ—¶æ‰§è¡Œçš„å‡½æ•°  
 function addLoadEvent(func){  
     var oldonload = window.onload;  
     if(typeof window.onload != 'function'){  
@@ -32,7 +32,7 @@ function addLoadEvent(func){
     }  
 }  
   
-//ÔÚÄ¿±êÔªËØÖ®ºó²åÈëĞÂÔªËØ  
+//åœ¨ç›®æ ‡å…ƒç´ ä¹‹åæ’å…¥æ–°å…ƒç´   
 function insertAfter(newElement,targetElement){  
     var parent = targetElement.parentNode;  
     if(parent.lastChild == targetElement){  
@@ -42,7 +42,7 @@ function insertAfter(newElement,targetElement){
     }  
 }  
   
-//»ñÈ¡ÔªËØµÄÏÂÒ»¸öÔªËØ½Úµã  
+//è·å–å…ƒç´ çš„ä¸‹ä¸€ä¸ªå…ƒç´ èŠ‚ç‚¹  
 function getNextElement(node){  
     return nextElement(node.nextSibling);  
 }  
@@ -58,7 +58,7 @@ function nextElement(node){
     return null;  
 }  
   
-// Ïò element ×·¼ÓÒ»¸öĞÂµÄ class  
+// å‘ element è¿½åŠ ä¸€ä¸ªæ–°çš„ class  
 function addClass(element,value){  
     if(!element.className){  
         element.className = value;  
@@ -70,7 +70,7 @@ function addClass(element,value){
     }  
 }  
   
-//¼ì²éä¯ÀÀÆ÷ÊÇ·ñÖ§³ÖÄ³ÖÖÀàĞÍµÄÊäÈë¿Ø¼ş  
+//æ£€æŸ¥æµè§ˆå™¨æ˜¯å¦æ”¯æŒæŸç§ç±»å‹çš„è¾“å…¥æ§ä»¶  
 function inputSupportsType(type){  
     if(!doucument.createElement) return false;  
     var input = doucument.createElement('input');  
@@ -82,7 +82,7 @@ function inputSupportsType(type){
     }  
 }  
   
-//¼ì²éÄ³ÖÖÊôĞÔÊÇ·ñÖ§³Ö  
+//æ£€æŸ¥æŸç§å±æ€§æ˜¯å¦æ”¯æŒ  
 function elementSupportsAttribute(elementName,attribute){  
     if(!doucument.createElement) return false;  
     var temp = doucument.createElement(elementName);  
